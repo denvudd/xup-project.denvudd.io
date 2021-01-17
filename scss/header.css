@@ -1,0 +1,111 @@
+/* BUTTONS */
+/* Header */
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: 0.5s ease;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #F5F5F5;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #5B64FF;
+  width: 0%;
+  border-radius: 8px;
+  transition: .1s ease-out;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header.fixed {
+  height: auto;
+  position: fixed;
+  background-color: #EFF0FF;
+  z-index: 1001;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.header.fixed .burger-menu__button {
+  top: 30px;
+  right: 0px;
+}
+
+.header.fixed .progress-container {
+  opacity: 1;
+}
+
+.header.fixed .header__inner {
+  border-bottom: 0;
+}
+
+.header__logo {
+  padding-right: 40px;
+}
+
+.nav__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D2D30;
+  margin-right: 40px;
+  transition: 0.2s ease;
+}
+.nav__link:last-child {
+  margin-right: 45px;
+}
+.nav__link:hover {
+  color: #1421FF;
+}
+
+.active {
+  color: #1421FF;
+}
+
+.buttonBrief {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1421FF;
+  text-decoration: none;
+  border: 1.5px solid #1421FF;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.buttonBrief:hover {
+  border: 1.5px solid #5B64FF;
+  color: #5B64FF;
+}
+.buttonBrief:active {
+  color: #2D2D30;
+}
+.buttonBrief:focus {
+  color: #52525A;
+}

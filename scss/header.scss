@@ -1,0 +1,108 @@
+@import 'vars';
+@import 'mixin';
+
+/* Header */
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  transition: 0.5s ease;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: $gray;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  height: 5px;
+  background: $blue70;
+  width: 0%;
+  border-radius: 8px;
+
+  transition: .1s ease-out;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header.fixed {
+  height: auto;
+  position: fixed;
+  background-color: $smallblue;
+  z-index: 1001;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.header.fixed {
+  .burger-menu__button {
+    top: 30px;
+    right: 0px;
+  }
+}
+
+.header.fixed {
+  .progress-container {
+    opacity: 1;
+  }
+}
+
+.header.fixed .header__inner {
+  border-bottom: 0;
+}
+
+.header__logo {
+  padding-right: 40px;
+}
+
+.nav__link {
+  @include mont14SemiBold ();
+  text-decoration: none;
+  color: $black;
+  margin-right: 40px;
+  transition: 0.2s ease;
+
+  &:last-child {
+    margin-right: 45px;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.active {
+  color: $blue;
+}
+
+.buttonBrief {
+  @include buttonNormal2 ();
+
+  &:hover {
+    @include buttonHover2 ();
+  }
+
+  &:active {
+    @include buttonPressed2 ();
+  }
+
+  &:focus {
+    @include buttonDisabled2 ();
+  }
+}

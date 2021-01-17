@@ -1,0 +1,113 @@
+@import 'vars';
+@import 'mixin';
+@import 'header';
+
+.burger-menu {
+  display: none;
+}
+
+
+.burger-menu__button {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  z-index: 10000;
+  width: 60px;
+  height: 60px;
+
+  transition: 0.5s;
+}
+
+
+.burger-menu__active .burger-menu__button,
+.burger-menu__active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu__active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: $black;
+
+  transition: .2s;
+}
+
+.burger-menu__active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: $black;
+  transition: .2s;
+}
+
+
+
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 8px;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -6px;
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 6px;
+}
+
+.burger-menu__nav {
+  padding-top: $p104;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  background-color: $smallblue;
+  overflow-y: auto;
+  right: -100%;
+  width: 100vw;
+  text-align: center;
+
+  transition: 0.5s;
+}
+
+.burger-menu__active .burger-menu__nav {
+  right: 0;
+}
+
+.burger__link {
+  @include mont34ExtraBold();
+  text-decoration: none;
+  color: $black;
+  padding-bottom: $p32;
+
+}
+
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.burger-menu__active .burger-menu__overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}

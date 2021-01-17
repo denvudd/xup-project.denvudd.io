@@ -1,0 +1,137 @@
+// FONTS
+@mixin mont64Bold () {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+@mixin mont48ExtraBold () {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+}
+
+@mixin mont48Bold () {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+@mixin mont34ExtraBold () {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+@mixin mont30ExtraBold () {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+@mixin mont24Bold () {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@mixin mont24Medium () {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+@mixin mont20Bold () {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin mont16BoldButtons () {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin mont16Medium () {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin mont14SemiBold () {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@mixin mont14Regular () {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* BUTTONS */
+
+// Buttons 1
+@mixin buttonNormal1 () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  background: $blue;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+@mixin buttonHover1 () {
+  background: $blue70;
+}
+
+@mixin buttonPressed1 () {
+  background: $black;
+}
+
+@mixin buttonDisabled1 () {
+  background: $grayText;
+}
+
+// Buttons 2 
+@mixin buttonNormal2 () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $blue;
+  text-decoration: none;
+
+  border: 1.5px solid $blue;
+  background: $white;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+@mixin buttonHover2 () {
+  border: 1.5px solid $blue70;
+  color: $blue70;
+}
+
+@mixin buttonPressed2 () {
+  color: $black;
+}
+
+@mixin buttonDisabled2 () {
+  color: $grayText;
+}

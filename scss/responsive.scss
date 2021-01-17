@@ -1,0 +1,1889 @@
+@import 'vars';
+@import 'mixin';
+
+/*========== LAPTOP ===========*/
+/*========== LAPTOP ===========*/
+/*========== LAPTOP ===========*/
+
+@media #{$laptop} {
+  /* Header */
+
+  .nav__link {
+    margin-right: 20px;
+  }
+
+  /* Our customers */
+
+  .services__carousel {
+    width: 1200px;
+  }
+
+  .carousel__title {
+    margin-right: $p48;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/*========== LARGE DEVICES ===========*/
+/*========== LARGE DEVICES ===========*/
+/*========== LARGE DEVICES ===========*/
+
+@media #{$lg} {
+
+  /* Header */
+
+  .header__inner {
+    display: block;
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__logo {
+    img {
+      width: 90px;
+      height: 30px;
+    }
+  }
+
+  /* Burger Menu */
+
+  .burger-menu {
+    display: block;
+
+    .header__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .buttonBrief {
+    padding: 18px 32px;
+  }
+
+
+  /* Section */
+
+  .container {
+    width: 768px;
+  }
+
+  .section__header {
+    width: auto;
+  }
+
+  .section__title {
+    h1 {
+      @include mont34ExtraBold();
+    }
+  }
+
+  /* A little team section */
+
+  .section__team__inner {
+    flex-direction: column;
+    padding-bottom: $p104;
+  }
+
+  .team__text--1 {
+    min-width: 570px;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: $p32;
+
+    h1 {
+      @include mont34ExtraBold();
+    }
+  }
+
+  .team__text--2 {
+    min-width: 656px;
+    text-align: start;
+    margin: 0 auto;
+    padding-top: $p32;
+  }
+
+  .team__photo__inner {
+    text-align: center;
+
+    img {
+      margin-right: 0;
+    }
+  }
+
+  /* WeDo */
+
+  .weDo__photo__inner {
+    img {
+      width: 656px;
+      height: 233px;
+    }
+  }
+
+  .weDo__inner {
+    flex-direction: column;
+    padding-bottom: $p104;
+  }
+
+  .weDo__item {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .weDo__item__title {
+    @include mont20Bold();
+  }
+
+  /* Our customers */
+
+  .services__carousel {
+    width: 768px;
+    padding-bottom: $p104;
+  }
+
+  .carousel__title {
+    margin-right: $p48;
+    margin-bottom: $p32;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .effect1 {
+    width: 158px;
+  }
+
+  .effect2 {
+    width: 158px;
+  }
+
+  /* Systems */
+
+  .systems {
+    padding-bottom: $p104;
+  }
+
+  .systems__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .systems__item {
+    margin-right: $p32;
+    margin-bottom: $p32;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  /* Examples */
+
+  .usefulToWork__photo {
+    img {
+      width: 656px;
+      height: 233px;
+    }
+  }
+
+  /* Cooperation */
+
+  .cooperation__gallery__inner {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: $p104;
+  }
+
+  .cooperation__gallery__item {
+    margin-right: $p32;
+    margin-bottom: $p24;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  /* Stages */
+
+  .stages__wrapper {
+    width: 768px;
+    padding-top: $p32;
+  }
+
+  .timeline {
+    &::after {
+      left: 20.5%;
+    }
+  }
+
+  .stages__col {
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    position: relative;
+  }
+
+  /* Advantages */
+
+  .advantages__title {
+    h1 {
+      @include mont34ExtraBold();
+    }
+
+    padding-right: 46px;
+    width: 290px;
+  }
+
+  .advantages__photo {
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  /* Outsource-profit section */
+
+  .outsource-profit__title {
+    h1 {
+      @include mont34ExtraBold();
+    }
+
+    padding-left: $p72;
+    width: 254px;
+  }
+
+  .outsource-profit__photo {
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  /* Questions section */
+
+  .questions__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p104;
+  }
+
+  .accordion__wrapper {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .questions__text {
+    order: 0;
+    width: auto;
+    padding-bottom: $p32;
+  }
+
+  .questions__title {
+    text-align: center;
+    padding-bottom: $p16;
+
+    h1 {
+      @include mont34ExtraBold();
+    }
+  }
+
+  .questions__suptitle {
+    text-align: center;
+  }
+
+  /* Rate Us */
+
+  .rateUs__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding-top: 0;
+    padding-bottom: $p104;
+  }
+
+  .rateUs__text {
+    text-align: center;
+    width: auto;
+    margin-right: 0;
+    padding-bottom: $p32;
+  }
+
+  .rateUs__text__title {
+    h1 {
+      @include mont34ExtraBold()
+    }
+  }
+
+  .questions__suptitle {
+    padding-top: $p16;
+
+    h4 {
+      @include mont14Regular();
+    }
+
+  }
+
+  .contact__input {
+    width: 656px;
+    padding: 12px 16px 12px 12px;
+    background-color: $gray;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .send__button {
+    padding-right: $p16;
+  }
+
+  .footer__logo {
+    padding-top: $p24;
+  }
+
+  .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 146px;
+  }
+
+  .footer__social__item {
+    margin-bottom: $p16;
+  }
+
+  .footer__contacts__inner {
+    padding-top: $p24;
+  }
+
+  .examples__gallery__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/*========== MID DEVICES ===========*/
+/*========== MID DEVICES ===========*/
+/*========== MID DEVICES ===========*/
+
+@media #{$md} {
+  /* Header */
+
+  .header__inner {
+    display: block;
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__logo {
+    img {
+      width: 90px;
+      height: 30px;
+    }
+  }
+
+  /* Burger Menu */
+
+  .burger-menu {
+    display: block;
+
+    .header__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .buttonBrief {
+    padding: 18px 32px;
+  }
+
+
+  /* Section */
+
+  .container {
+    width: 768px;
+  }
+
+  .section__header {
+    width: 528px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+  }
+
+  /* Intro */
+  .intro {
+    padding-bottom: $p200;
+  }
+
+  .intro__inner {
+    padding-top: $p200;
+  }
+
+  .intro__title {
+    @include mont30ExtraBold ();
+  }
+
+  /* A little team section */
+
+  .section__team__inner {
+    flex-direction: column;
+    padding-bottom: $p104;
+  }
+
+  .team__text--1 {
+    min-width: 570px;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: $p32;
+
+    h1 {
+      @include mont30ExtraBold();
+    }
+  }
+
+  .team__text--2 {
+    min-width: 656px;
+    text-align: start;
+    margin: 0 auto;
+    padding-top: $p32;
+  }
+
+  .team__photo__inner {
+    text-align: center;
+
+    img {
+      margin-right: 0;
+      width: 348px;
+      height: 328px;
+    }
+  }
+
+  /* WeDo */
+
+  .weDo__photo__inner {
+    img {
+      width: 525px;
+      height: 187px;
+    }
+  }
+
+  .weDo__inner {
+    flex-direction: column;
+    padding-bottom: $p104;
+  }
+
+  .weDo__item {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .weDo__item__title {
+    @include mont20Bold();
+  }
+
+  /* Our customers */
+
+  .services__carousel {
+    width: 768px;
+    padding-bottom: $p104;
+  }
+
+  .carousel__row {
+    flex-direction: column;
+  }
+
+  .carousel__title {
+    margin-right: $p24;
+    margin-left: $p24;
+    margin-bottom: $p32;
+    @include mont20Bold();
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  .carousel__title--bold {
+    margin-right: $p24;
+    margin-left: $p24;
+  }
+
+  .effect1 {
+    width: 158px;
+  }
+
+  .effect2 {
+    width: 158px;
+  }
+
+  /* Systems */
+
+  .systems {
+    padding-bottom: $p104;
+  }
+
+  .systems__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .systems__item {
+    margin-right: 0;
+    margin-bottom: $p32;
+  }
+
+  .systems__item__photo {
+    img {
+      width: 328px;
+      height: 242px;
+    }
+
+  }
+
+  /* Examples */
+
+  .examples__gallery__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .examples__gallery__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .examples__item__text {
+    padding: 90px 0px 0px 15px;
+    width: auto;
+  }
+
+  .examples__gallery__photo {
+    img {
+      width: 328px;
+      height: 328px;
+    }
+  }
+
+  /* UsefulToWork */
+  .usefulToWork__photo {
+    img {
+      width: 525px;
+      height: 187px;
+    }
+  }
+
+  /* Cooperation */
+
+  .cooperation__gallery__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .cooperation__gallery__item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .cooperation__gallery__title {
+    padding-bottom: $p8;
+  }
+
+  .cooperation__gallery__suptitle p {
+    min-height: 130px;
+    padding-bottom: 16px;
+  }
+
+  /* Stages */
+
+  .stages {
+    padding-bottom: $p64;
+
+    h4 {
+      display: none;
+    }
+
+    h5 {
+      display: none;
+    }
+  }
+
+  .stages__wrapper {
+    width: 528px;
+    padding-top: $p32;
+  }
+
+  .timeline {
+    &::after {
+      left: 1%;
+      top: -40px;
+    }
+  }
+
+  .stages__col {
+    display: flex;
+    flex-direction: column;
+    left: -20%;
+    position: relative;
+  }
+
+  .stages__row {
+    &::after {
+      left: -4.5%;
+      top: 40x;
+    }
+  }
+
+  /* Advantages */
+
+  .advantages__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+
+    padding-right: 0;
+    padding-bottom: $p32;
+    width: 528px;
+    text-align: center;
+  }
+
+  .advantages__photo {
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  .advantages__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Outsource-profit section */
+
+  .outsource-profit__inner {
+    flex-direction: column;
+  }
+
+  .outsource-profit__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+
+    padding-left: 0;
+    padding-bottom: $p32;
+    width: 528px;
+    margin: 0 auto;
+    text-align: center;
+    order: 0;
+  }
+
+  .outsource-profit__photo {
+    text-align: center;
+    order: 1;
+
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  /* Questions section */
+
+  .questions__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p104;
+  }
+
+  .accordion__wrapper {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .dropdownlink {
+    @include mont16BoldButtons();
+
+    span {
+      width: 256px;
+    }
+  }
+
+  .accordion-menu li {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .questions__text {
+    order: 0;
+    width: auto;
+    padding-bottom: $p32;
+  }
+
+  .questions__title {
+    text-align: center;
+    padding-bottom: $p16;
+
+    h1 {
+      @include mont34ExtraBold();
+    }
+  }
+
+  .questions__suptitle {
+    text-align: center;
+  }
+
+  /* Rate Us */
+
+  .rateUs__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding-top: 0;
+    padding-bottom: $p104;
+  }
+
+  .rateUs__text {
+    text-align: center;
+    width: auto;
+    margin-right: 0;
+    padding-bottom: $p32;
+  }
+
+  .rateUs__text__title {
+    h1 {
+      @include mont34ExtraBold()
+    }
+  }
+
+  .questions__suptitle {
+    padding-top: $p16;
+
+    h4 {
+      @include mont14Regular();
+    }
+
+  }
+
+  /* Footer */
+
+  .contact__input {
+    width: 528px;
+    padding: 12px 16px 12px 12px;
+    margin-right: $p16;
+    margin-left: $p16;
+    background-color: $gray;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .contact__form {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact__form h2 {
+    margin-left: $p16;
+    margin-right: $p16;
+  }
+
+  .contact__textarea {
+    width: 528px;
+    margin-right: $p16;
+    margin-left: $p16;
+  }
+
+
+  .send__button {
+    padding-right: $p104;
+  }
+
+  /* Footer */
+
+  .footer__inner {
+    flex-direction: column;
+    padding-right: $p32;
+    padding-left: $p32;
+  }
+
+  .footer__logo {
+    padding-top: $p24;
+    padding-bottom: $p48;
+  }
+
+  .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 146px;
+    padding-bottom: $p48;
+  }
+
+  .footer__social__item {
+    margin-bottom: 0;
+  }
+
+  .footer__contacts__inner {
+    padding-top: $p24;
+  }
+
+}
+
+/*========== SMALL DEVICES ===========*/
+/*========== SMALL DEVICES ===========*/
+/*========== SMALL DEVICES ===========*/
+
+@media #{$sm} {
+  /* Header */
+
+  .header__inner {
+    display: block;
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__logo {
+    img {
+      width: 90px;
+      height: 30px;
+    }
+  }
+
+  /* Burger Menu */
+
+  .burger-menu {
+    display: block;
+
+    .header__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .burger-menu__nav {
+    padding-top: $p64;
+  }
+
+  .burger__link {
+    @include mont24Bold();
+  }
+
+  .buttonBrief {
+    padding: 18px 32px;
+  }
+
+
+  /* Section */
+
+  .container {
+    width: 360px;
+  }
+
+  .section__header {
+    width: 328px;
+    margin: 0;
+    text-align: start;
+  }
+
+  .section__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+  }
+
+  /* Intro */
+  .intro {
+    padding-bottom: $p104;
+  }
+
+  .intro__inner {
+    padding-top: 160px;
+    text-align: start;
+  }
+
+  .intro__title {
+    text-align: start;
+    @include mont30ExtraBold ();
+  }
+
+  /* A little team section */
+
+  .section__team__inner {
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .team__text--1 {
+    width: 328px;
+    text-align: start;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: $p32;
+
+    h1 {
+      @include mont30ExtraBold();
+    }
+  }
+
+  .team__text--2 {
+    width: auto;
+    text-align: start;
+    margin: 0 auto;
+    padding-top: $p32;
+  }
+
+  .team__photo__inner {
+    text-align: center;
+
+    img {
+      margin-right: 0;
+      width: 348px;
+      height: 328px;
+    }
+  }
+
+  /* WeDo */
+
+  .weDo__photo__inner {
+    img {
+      width: 360px;
+      height: 117px;
+    }
+  }
+
+  .weDo__inner {
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .weDo__item {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .weDo__item__title {
+    @include mont20Bold();
+  }
+
+  /* Our customers */
+
+  .services__carousel {
+    width: 360px;
+    padding-bottom: $p64;
+    padding-top: 0;
+  }
+
+  .carousel__row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel__title {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: $p32;
+    @include mont20Bold();
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  .carousel__title--bold {
+    margin-right: $p24;
+    margin-left: $p24;
+  }
+
+  .effect1 {
+    display: none;
+  }
+
+  .effect2 {
+    display: none;
+  }
+
+  /* Systems */
+
+  .systems {
+    padding-bottom: $p64;
+  }
+
+  .systems__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .systems__item {
+    margin-right: 0;
+    margin-bottom: $p32;
+  }
+
+  .systems__item__photo {
+    img {
+      width: 328px;
+      height: 242px;
+    }
+
+  }
+
+  /* Examples */
+
+  .examples__gallery__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .examples__gallery__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .examples__item__text {
+    padding: 90px 0px 0px 15px;
+    width: auto;
+  }
+
+  .examples__gallery__photo {
+    img {
+      width: 328px;
+      height: 328px;
+    }
+  }
+
+  /* UsefulToWork */
+  .usefulToWork__photo {
+    img {
+      width: 360px;
+      height: 117px;
+    }
+  }
+
+  /* Cooperation */
+
+  .cooperation__gallery__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .cooperation__gallery__item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .cooperation__gallery__title {
+    padding-bottom: $p8;
+  }
+
+  .cooperation__gallery__suptitle p {
+    min-height: 130px;
+    padding-bottom: 16px;
+  }
+
+  /* Stages */
+
+  .stages {
+    padding-bottom: $p64;
+
+    h4 {
+      display: none;
+    }
+
+    h5 {
+      display: none;
+    }
+  }
+
+  .stages__wrapper {
+    width: 328px;
+    padding-top: $p32;
+  }
+
+  .timeline {
+    &::after {
+      left: 1%;
+      top: -25px;
+    }
+  }
+
+  .stages__col {
+    display: flex;
+    flex-direction: column;
+    left: -20%;
+    position: relative;
+  }
+
+  .stages__row {
+    &::after {
+      left: -5%;
+      top: 10px;
+    }
+  }
+
+  /* Advantages */
+
+  .advantages__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+
+    padding-right: 0;
+    padding-bottom: $p32;
+    width: 328px;
+    text-align: start;
+  }
+
+  .advantages__photo {
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  .advantages__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Outsource-profit section */
+
+  .outsource-profit__inner {
+    flex-direction: column;
+  }
+
+  .outsource-profit__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+
+    padding-left: 0;
+    padding-bottom: $p32;
+    width: 328px;
+    text-align: start;
+    order: 0;
+  }
+
+  .outsource-profit__photo {
+    text-align: center;
+    order: 1;
+
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  /* Questions section */
+
+  .questions__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .accordion__wrapper {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .dropdownlink {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+
+  .submenuItems {
+    img {
+      width: 290px;
+      height: 200px;
+    }
+  }
+
+  .accordion-menu li {
+    width: 327px;
+    margin: 0 auto;
+  }
+
+  .questions__text {
+    order: 0;
+    width: auto;
+    padding-bottom: $p32;
+  }
+
+  .questions__title {
+    text-align: center;
+    padding-bottom: $p16;
+
+    h1 {
+      @include mont34ExtraBold();
+    }
+  }
+
+  .questions__suptitle {
+    text-align: center;
+  }
+
+  /* Rate Us */
+
+  .rateUs__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding-top: 0;
+    padding-bottom: $p64;
+  }
+
+  .rateUs__text {
+    text-align: center;
+    width: auto;
+    margin-right: 0;
+    padding-bottom: $p32;
+  }
+
+  .rateUs__text__title {
+    h1 {
+      @include mont34ExtraBold()
+    }
+  }
+
+  .questions__suptitle {
+    padding-top: $p16;
+
+    h4 {
+      @include mont14Regular();
+    }
+
+  }
+
+  /* Footer */
+
+  .contact__input {
+    width: 328px;
+    padding: 12px 16px 12px 12px;
+    margin-right: $p16;
+    margin-left: $p16;
+    background-color: $gray;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .contact__form {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact__form h2 {
+    margin-left: $p16;
+    margin-right: $p16;
+  }
+
+  .contact__textarea {
+    width: 328px;
+    margin-right: $p16;
+    margin-left: $p16;
+  }
+
+
+  .send__button {
+    padding-right: 0;
+  }
+
+  .send__button__inner {
+    justify-content: center;
+  }
+
+  /* Footer */
+
+  .footer__inner {
+    flex-direction: column;
+    padding-right: $p32;
+    padding-left: $p32;
+  }
+
+  .footer__logo {
+    padding-top: $p24;
+    padding-bottom: $p48;
+  }
+
+  .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-bottom: $p48;
+  }
+
+  .footer__social__item {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .footer__contacts__inner {
+    padding-top: $p24;
+  }
+
+}
+
+/*========== EXTRA SMALL DEVICES ===========*/
+/*========== EXTRA SMALL DEVICES ===========*/
+/*========== EXTRA SMALL DEVICES ===========*/
+
+@media #{$xs} {
+  /* Header */
+
+  .header__inner {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__logo {
+    img {
+      width: 90px;
+      height: 30px;
+    }
+  }
+
+  /* Burger Menu */
+
+  .burger-menu {
+    display: block;
+
+    .header__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .burger-menu__nav {
+    padding-top: $p64;
+  }
+
+  .burger__link {
+    @include mont24Bold();
+  }
+
+  .buttonBrief {
+    padding: 18px 32px;
+  }
+
+
+  /* Section */
+
+  .container {
+    width: 360px;
+  }
+
+  .section__header {
+    width: 328px;
+    margin: 0;
+    text-align: start;
+  }
+
+  .section__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+  }
+
+  /* Intro */
+  .intro {
+    padding-bottom: $p104;
+  }
+
+  .intro__inner {
+    padding-top: 160px;
+    text-align: start;
+  }
+
+  .intro__title {
+    text-align: start;
+    @include mont30ExtraBold ();
+  }
+
+  /* A little team section */
+
+  .section__team__inner {
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .team__text--1 {
+    width: 328px;
+    text-align: start;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: $p32;
+
+    h1 {
+      @include mont30ExtraBold();
+    }
+  }
+
+  .team__text--2 {
+    width: auto;
+    text-align: start;
+    margin: 0 auto;
+    padding-top: $p32;
+  }
+
+  .team__photo__inner {
+    text-align: center;
+
+    img {
+      margin-right: 0;
+      width: 348px;
+      height: 328px;
+    }
+  }
+
+  /* WeDo */
+
+  .weDo__photo__inner {
+    img {
+      width: 360px;
+      height: 117px;
+    }
+  }
+
+  .weDo__inner {
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .weDo__item {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .weDo__item__title {
+    @include mont20Bold();
+  }
+
+  /* Our customers */
+
+  .services__carousel {
+    width: 360px;
+    padding-bottom: $p64;
+    padding-top: 0;
+  }
+
+  .carousel__row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel__title {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: $p32;
+    @include mont20Bold();
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  .carousel__title--bold {
+    margin-right: $p24;
+    margin-left: $p24;
+  }
+
+  .effect1 {
+    display: none;
+  }
+
+  .effect2 {
+    display: none;
+  }
+
+  /* Systems */
+
+  .systems {
+    padding-bottom: $p64;
+  }
+
+  .systems__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .systems__item {
+    margin-right: 0;
+    margin-bottom: $p32;
+  }
+
+  .systems__item__photo {
+    img {
+      width: 328px;
+      height: 242px;
+    }
+
+  }
+
+  /* Examples */
+
+  .examples__gallery__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .examples__gallery__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .examples__item__text {
+    padding: 90px 0px 0px 15px;
+    width: auto;
+  }
+
+  .examples__gallery__photo {
+    img {
+      width: 328px;
+      height: 328px;
+    }
+  }
+
+  /* UsefulToWork */
+  .usefulToWork__photo {
+    img {
+      width: 360px;
+      height: 117px;
+    }
+  }
+
+  /* Cooperation */
+
+  .cooperation__gallery__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .cooperation__gallery__item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .cooperation__gallery__title {
+    padding-bottom: $p8;
+  }
+
+  .cooperation__gallery__suptitle p {
+    min-height: 130px;
+    padding-bottom: 16px;
+  }
+
+  /* Stages */
+
+  .stages {
+    padding-bottom: $p64;
+
+    h4 {
+      display: none;
+    }
+
+    h5 {
+      display: none;
+    }
+  }
+
+  .stages__wrapper {
+    width: 328px;
+    padding-top: $p32;
+  }
+
+  .timeline {
+    &::after {
+      left: 1%;
+      top: -25px;
+    }
+  }
+
+  .stages__col {
+    display: flex;
+    flex-direction: column;
+    left: -20%;
+    position: relative;
+  }
+
+  .stages__row {
+    &::after {
+      left: -5%;
+      top: 10px;
+    }
+  }
+
+  /* Advantages */
+
+  .advantages__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+
+    padding-right: 0;
+    padding-bottom: $p32;
+    width: 328px;
+    text-align: start;
+  }
+
+  .advantages__photo {
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  .advantages__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Outsource-profit section */
+
+  .outsource-profit__inner {
+    flex-direction: column;
+  }
+
+  .outsource-profit__title {
+    h1 {
+      @include mont30ExtraBold();
+    }
+
+    padding-left: 0;
+    padding-bottom: $p32;
+    width: 328px;
+    text-align: start;
+    order: 0;
+  }
+
+  .outsource-profit__photo {
+    text-align: center;
+    order: 1;
+
+    img {
+      width: 320px;
+      height: 242px;
+    }
+  }
+
+  /* Questions section */
+
+  .questions__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: $p64;
+  }
+
+  .accordion__wrapper {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .dropdownlink {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+
+  .submenuItems {
+    img {
+      width: 290px;
+      height: 200px;
+    }
+  }
+
+  .accordion-menu li {
+    width: 327px;
+    margin: 0 auto;
+  }
+
+  .questions__text {
+    order: 0;
+    width: auto;
+    padding-bottom: $p32;
+  }
+
+  .questions__title {
+    text-align: center;
+    padding-bottom: $p16;
+
+    h1 {
+      @include mont34ExtraBold();
+    }
+  }
+
+  .questions__suptitle {
+    text-align: center;
+  }
+
+  /* Rate Us */
+
+  .rateUs__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding-top: 0;
+    padding-bottom: $p64;
+  }
+
+  .rateUs__text {
+    text-align: center;
+    width: auto;
+    margin-right: 0;
+    padding-bottom: $p32;
+  }
+
+  .rateUs__text__title {
+    h1 {
+      @include mont34ExtraBold()
+    }
+  }
+
+  .questions__suptitle {
+    padding-top: $p16;
+
+    h4 {
+      @include mont14Regular();
+    }
+
+  }
+
+
+  /* Footer */
+
+  .contact__input {
+    width: 250px;
+    padding: 12px 16px 12px 12px;
+    margin-right: $p16;
+    margin-left: $p16;
+    background-color: $gray;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .contact__form {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact__form h2 {
+    margin-left: $p16;
+    margin-right: $p16;
+  }
+
+  .contact__textarea {
+    width: 250px;
+    margin-right: $p16;
+    margin-left: $p16;
+  }
+
+
+  .send__button {
+    padding-right: 0;
+  }
+
+  .send__button__inner {
+    justify-content: center;
+  }
+
+  /* Footer */
+
+  .footer__inner {
+    flex-direction: column;
+    padding-right: $p32;
+    padding-left: $p32;
+  }
+
+  .footer__logo {
+    padding-top: $p24;
+    padding-bottom: $p48;
+  }
+
+  .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-bottom: $p48;
+  }
+
+  .footer__social__item {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .footer__contacts__inner {
+    padding-top: $p24;
+  }
+
+}

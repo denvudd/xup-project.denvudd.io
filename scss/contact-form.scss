@@ -1,0 +1,111 @@
+@import 'vars';
+@import 'mixin';
+// Contact form section
+
+.rateUs__inner {
+  display: flex;
+  justify-content: center;
+
+  padding-top: $p200;
+  padding-bottom: $p286;
+}
+
+.rateUs__text {
+  min-width: 330px;
+  margin-right: $p72;
+}
+
+.rateUs__text__title {
+  h1 {
+    @include mont48ExtraBold()
+  }
+}
+
+.rateUs__text__suptitle {
+  padding-top: $p24;
+
+  h4 {
+    @include mont14Regular();
+  }
+}
+
+.contact__form {
+  ul {
+    list-style-type: none;
+    list-style-position: outside;
+    padding-inline-start: 0px;
+    margin-bottom: $p16;
+  }
+
+  h2 {
+    @include mont14Regular();
+  }
+}
+
+.contact__input {
+  width: 728px;
+  padding: 12px 16px 12px 12px;
+  background-color: $gray;
+  border: none;
+  border-radius: 8px;
+
+  &::placeholder {
+    @include mont14Regular();
+    font-family: Montserrat;
+  }
+
+  &:focus {
+    background-color: $smallblue;
+  }
+
+  &:hover {
+    background-color: $smallblue;
+  }
+
+  &:active {
+    background-color: $smallblue;
+  }
+}
+
+.contact__textarea {
+  width: 728px;
+  min-height: 100px;
+  padding: 12px 16px 12px 12px;
+  background-color: $gray;
+  border: none;
+  border-radius: 8px;
+  @include mont14Regular();
+  font-family: Montserrat;
+
+  &::placeholder {
+    @include mont14Regular();
+    font-family: Montserrat;
+  }
+}
+
+
+.send__button {
+  padding-top: $p24;
+
+  a {
+    @include buttonNormal1();
+    box-shadow: $buttonShadow;
+  }
+
+  a:hover {
+    @include buttonHover1();
+  }
+
+  a:active {
+    @include buttonPressed1();
+  }
+
+  a:focus {
+    @include buttonDisabled1();
+  }
+}
+
+.send__button__inner {
+  display: flex;
+  justify-content: flex-end;
+}
